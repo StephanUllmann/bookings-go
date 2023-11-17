@@ -14,7 +14,7 @@ func WriteToConsole(next http.Handler) http.Handler {
 		currTime := time.Now()
 		dt := fmt.Sprint(currTime.Format("02.01.2006 15:04:05"))
 
-		fmt.Printf("Hit the page: %v | %v | %v\n", r.Method, r.URL.Path, dt)
+		fmt.Printf("%v |-> %v : %v\n", dt, r.Method, r.URL.Path)
 		next.ServeHTTP(w, r)
 	})
 }
