@@ -2,12 +2,13 @@ package render
 
 import (
 	"bytes"
-	"hello-web/pkg/config"
-	"hello-web/pkg/models"
 	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
+
+	"github.com/StephanUllmann/bookings-go/pkg/config"
+	"github.com/StephanUllmann/bookings-go/pkg/models"
 )
 
 var app *config.AppConfig

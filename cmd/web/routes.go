@@ -1,9 +1,10 @@
 package main
 
 import (
-	"hello-web/pkg/config"
-	"hello-web/pkg/handlers"
 	"net/http"
+
+	"github.com/StephanUllmann/bookings-go/pkg/config"
+	"github.com/StephanUllmann/bookings-go/pkg/handlers"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"

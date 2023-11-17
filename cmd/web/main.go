@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"hello-web/pkg/config"
-	"hello-web/pkg/handlers"
-	"hello-web/pkg/render"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/StephanUllmann/bookings-go/pkg/config"
+	"github.com/StephanUllmann/bookings-go/pkg/handlers"
+	"github.com/StephanUllmann/bookings-go/pkg/render"
 
 	"github.com/alexedwards/scs/v2"
 )

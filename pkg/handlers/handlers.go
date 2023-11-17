@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"hello-web/pkg/config"
-	"hello-web/pkg/models"
-	"hello-web/pkg/render"
 	"net/http"
+
+	"github.com/StephanUllmann/bookings-go/pkg/config"
+	"github.com/StephanUllmann/bookings-go/pkg/models"
+	"github.com/StephanUllmann/bookings-go/pkg/render"
 )
 
 
