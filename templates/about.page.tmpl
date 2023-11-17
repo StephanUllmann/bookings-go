@@ -1,0 +1,22 @@
+{{ template "base" . }}
+{{ define "content" }}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>This is About!</h1>
+
+      <p>This came from the Template {{index .StringMap "test"}}</p>
+      <p>
+        {{if ne (index .StringMap "remote_ip") ""}}
+        You're on this IP: {{index .StringMap "remote_ip"}}
+        {{else}}
+        I don't know your IP address yet, go to
+        <a href="http://localhost:8080">Home</a>
+        to set it.
+        {{ end }}
+      </p>
+      <a href="http://localhost:8080">Home</a>
+    </div>
+  </div>
+</div>
+{{ end }}
